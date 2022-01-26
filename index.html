@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="home">
+    <!-- Navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient shadow-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cyber Lab Sriwijaya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tentang
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#profil">Profil</a></li>
+                            <li><a class="dropdown-item" href="#visimisi">Visi dan Misi</a></li>
+                            <li><a class="dropdown-item" href="#sejarah">Sejarah</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="#tentang" class="nav-link">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#layanan" class="nav-link">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portofolio" class="nav-link">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tim" class="nav-link">Tim Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#mitra" class="nav-link">Mitra Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn bg-success p-2 text-dark bg-opacity-10 text-white" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-header d-none d-md-block">
+            <h1>Cyber Lab Sriwijaya</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero unde laudantium aliquam eveniet nesciunt quae.</p>
+        </div>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item drk active">
+                <img src="https://wallpaperaccess.com/full/4091251.png" class="d-block w-100" alt="...">
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div> -->
+            </div>
+            <div class="carousel-item drk">
+                <img src="https://1.bp.blogspot.com/-hCQMUTqjfBM/XR76sVRDASI/AAAAAAAAELA/1mXX6FAa3uETa8V7NcTIY4OaQ0j3SR57wCKgBGAs/w0/sci-fi-night-city-cityscape-buildings-digital-art-uhdpaper.com-4K-143.jpg" class="d-block w-100" alt="...">
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div> -->
+            </div>
+            <div class="carousel-item drk">
+                <img src="https://free4kwallpapers.com/uploads/originals/2020/07/19/night-city-k-wallpaper.jpg" class="d-block w-100" alt="...">
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div> -->
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Layanan -->
+    <br>
+    <div class="container-fluid layanan pt-5 pb-5">
+        <div class="container">
+            <div class="container text-center">
+                <h2 class="display-3" id="layanan">Layanan</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, quas, facere explicabo ab rem minima facilis neque vero accusamus similique doloremque debitis illum. Reiciendis est earum rem, totam minima repudiandae?</p>
+                <div class="row pt-4">
+                    <div class="col-md-4">
+                        <span class="lingkaran"><i class="fas fa-code fa-5x"></i></span>
+                        <h3 class="mt-3">Programming</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, accusantium.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="lingkaran"><i class="fas fa-palette fa-5x"></i></span>
+                        <h3 class="mt-3">Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, accusantium.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="lingkaran"><i class="fas fa-network-wired fa-5x"></i></span>
+                        <h3 class="mt-3">Networking</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, accusantium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portofolio -->
+    <div class="container-fluid portofolio pt-5 pb-5 bg-light">
+        <div class="container text-center">
+            <h2 class="display-3" id="portofolio">Portofolio</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi placeat laudantium deleniti fuga, illo molestiae illum iure inventore doloribus rem eveniet doloremque molestias! Aliquam enim laboriosam, quos eum odio labore!</p>
+            <div class="row pt-4 gx-4 gy-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://cdn2.vectorstock.com/i/1000x1000/87/61/website-user-login-page-template-design-vector-36688761.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">DETAIL</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://docs.microsoft.com/id-id/power-bi/consumer/media/end-user-dashboard-open/power-bi-new-dashboard.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">DETAIL</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://core.ac.uk/images/screenshots/dashboard-overview.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">DETAIL</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://www.geckoboard.com/blog/content/images/2021/02/Capture_One_Support_Dashboard.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">DETAIL</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://themes.getbootstrap.com/wp-content/uploads/2020/08/front-dashboard-preview-1-1200x900.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">DETAIL</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://img.freepik.com/free-vector/template-dashboard-user-panel_23-2148368821.jpg?size=626&ext=jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">DETAIL</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tentang -->
+    <div class="container-fluid tentang pt-5 pb-5">
+        <div class="container">
+            <h2 class="display-3 text-center" id="tentang">Tentang</h2>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ex!
+            </p>
+            <div class="clearfix pt-5">
+                <img src="https://ghalibzahirinvestmentholdings.com/public/uploads/about_photo.jpg" class="col-md-6 float-md-end mb-3 crop-img" width="300" height="300" />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                    veritatis at voluptate commodi officiis sapiente.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                    veritatis at voluptate commodi officiis sapiente.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                    veritatis at voluptate commodi officiis sapiente.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Dignissimos laboriosam excepturi exercitationem qui expedita, ex
+                    temporibus natus necessitatibus accusamus voluptatibus.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Tim Kami -->
+    <div class="container-fluid pt-5 pb-5 bg-light">
+        <div class="container text-center">
+            <h2 class="display-3" id="tim">Tim Kami</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque tenetur earum excepturi cum nobis perspiciatis, labore deleniti amet eos praesentium placeat nulla corrupti itaque ut quasi illum! Porro, expedita!</p>
+            <div class="row pt-4 gx-4 gy-4">
+                <div class="col-md-4 text-center tim">
+                    <img src="https://pinotmasters.sk/wp-content/uploads/2015/04/speaker-3-v2.jpg" class="rounded-circle crop-img mb-3">
+                    <h4>Muhammad Yusron Hartoyo</h4>
+                    <p>Fullstack Developer</p>
+                    <p>
+                        <a href="" class="sosial"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="sosial"><i class="fab fa-facebook"></i></a>
+                        <a href="" class="sosial"><i class="fab fa-linkedin"></i></a>
+                    </p>
+                </div>
+                <div class="col-md-4 text-center tim">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1fvYGwKVq3JGj9L7LvXoF4WLresbhH4psaxLEBpqMF0bXY5EEr7fmbYwvyjJOoE9Vv2k&usqp=CAU" class="rounded-circle crop-img mb-3">
+                    <h4>Rosa Alawiyah</h4>
+                    <p>Frontend Developer</p>
+                    <p>
+                        <a href="" class="sosial"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="sosial"><i class="fab fa-facebook"></i></a>
+                        <a href="" class="sosial"><i class="fab fa-linkedin"></i></a>
+                    </p>
+                </div>
+                <div class="col-md-4 text-center tim">
+                    <img src="data:image/jpeg;base64,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" class="rounded-circle crop-img mb-3">
+                    <h4>Edho Dwi Handi</h4>
+                    <p>Backend Developer</p>
+                    <p>
+                        <a href="" class="sosial"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="sosial"><i class="fab fa-facebook"></i></a>
+                        <a href="" class="sosial"><i class="fab fa-linkedin"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mitra -->
+    <div class="container-fluid client pt-5 pb-5">
+        <div class="container text-center">
+            <h2 class="display-3" id="mitra">Mitra Kami</h2>
+            <div class="row pt-4 gx-4 gy-4">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.pngall.com/wp-content/uploads/2016/06/Microsoft-Windows-PNG-Pic.png" alt="">
+                            <img src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-file-facebook-icon-svg-wikimedia-commons-4.png" alt="">
+                            <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt="">
+                            <img src="https://aromaincense.id/wp-content/uploads/2018/10/shopee-icon-png-5.png" alt="">
+                            <img src="https://cdn-images-1.medium.com/max/1200/1*i0f2d72a2jiUAK3mbyXn0A.png" alt="">
+                            <img src="https://1000logos.net/wp-content/uploads/2020/11/Gojek-Logo.png" alt="">
+                            <img src="https://iconape.com/wp-content/files/ty/64755/svg/grab-2.svg" alt="">
+                            <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/data_sync/partner/profile_photo/hacktiv8_80.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://aromaincense.id/wp-content/uploads/2018/10/shopee-icon-png-5.png" alt="...">
+                            <img src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-file-facebook-icon-svg-wikimedia-commons-4.png" alt="">
+                            <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt="">
+                            <img src="https://aromaincense.id/wp-content/uploads/2018/10/shopee-icon-png-5.png" alt="">
+                            <img src="https://cdn-images-1.medium.com/max/1200/1*i0f2d72a2jiUAK3mbyXn0A.png" alt="">
+                            <img src="https://1000logos.net/wp-content/uploads/2020/11/Gojek-Logo.png" alt="">
+                            <img src="https://iconape.com/wp-content/files/ty/64755/svg/grab-2.svg" alt="">
+                            <img src="https://img2.pngdownload.id/20180413/hsq/kisspng-jakarta-logo-cdr-indonesia-5ad15d79b78c80.0462443715236703937518.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-file-facebook-icon-svg-wikimedia-commons-4.png" alt="">
+                            <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt="">
+                            <img src="https://aromaincense.id/wp-content/uploads/2018/10/shopee-icon-png-5.png" alt="">
+                            <img src="https://cdn-images-1.medium.com/max/1200/1*i0f2d72a2jiUAK3mbyXn0A.png" alt="">
+                            <img src="https://1000logos.net/wp-content/uploads/2020/11/Gojek-Logo.png" alt="">
+                            <img src="https://iconape.com/wp-content/files/ty/64755/svg/grab-2.svg" alt="">
+                            <img src="https://www.pngall.com/wp-content/uploads/2016/06/Microsoft-Windows-PNG-Pic.png" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Kontak -->
+    <div class="container-fluid pt-5 pb-5 kontak">
+        <div class="container">
+            <h2 class="display-3 text-center" id="kontak">Kontak Kami</h2>
+            <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos optio suscipit aut porro officiis odio sunt velit? Praesentium, nobis earum voluptatem, impedit eaque suscipit ut, magnam cum quis ipsam tempore!</p>
+            <div class="row pb-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control form-control-lg mb-3" name="nama" placeholder="Nama">
+                    <input type="email" class="form-control form-control-lg mb-3" name="email" placeholder="Email">
+                    <input type="text" class="form-control form-control-lg mb-3" name="telpon" placeholder="No. Handphone">
+                </div>
+                <div class="col-md-6">
+                    <textarea name="alamat" class="form-control form-control-lg" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="col-md-3 mx-auto text-center">
+                <button type="button" class="btn btn-success btn-lg">KIRIM PESAN</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
